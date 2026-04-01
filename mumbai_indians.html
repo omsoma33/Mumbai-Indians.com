@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mumbai Indians</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+  margin:0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #004ba0, #0a1f44);
+  color:white;
+}
+
+nav {
+  display:flex;
+  justify-content:space-between;
+  padding:15px 30px;
+  background: rgba(0,0,0,0.5);
+}
+
+nav h1 {
+  color:#ffd700;
+}
+
+.hero {
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.hero h2 {
+  font-size:50px;
+}
+
+.btn {
+  padding:10px 20px;
+  background:#ffd700;
+  border:none;
+  cursor:pointer;
+  margin-top:20px;
+}
+
+.section {
+  padding:60px 20px;
+  text-align:center;
+}
+
+.players {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+
+.card {
+  background:rgba(255,255,255,0.1);
+  padding:20px;
+  border-radius:10px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<h1>Mumbai Indians</h1>
+<div>Home | Players | About</div>
+</nav>
+
+<section class="hero">
+<div>
+<h2>Welcome to Mumbai Indians</h2>
+<p>5 Time IPL Champions</p>
+<button class="btn" onclick="showMsg()">Explore</button>
+</div>
+</section>
+
+<section class="section">
+<h2>Star Players</h2>
+<div class="players">
+<div class="card">Rohit Sharma</div>
+<div class="card">Jasprit Bumrah</div>
+<div class="card">Hardik Pandya</div>
+<div class="card">Suryakumar Yadav</div>
+</div>
+</section>
+
+<section class="section">
+<h2>About Team</h2>
+<p>Mumbai Indians is one of the most successful IPL teams with multiple championships.</p>
+</section>
+
+<script>
+function showMsg(){
+ alert("Mumbai Indians - Duniya Hila Denge!");
+}
+</script>
+
+</body>
+</html>
